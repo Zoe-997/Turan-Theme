@@ -1,0 +1,46 @@
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3 col-md-6 item">
+			<div class="footer-logo">
+				<a class="link-logo" href="#">
+					<img src="{{media url="wysiwyg/alothemes/logo-2.png"}}" alt="" width="161" height="43">
+				</a>
+			</div>
+			<div class="footer-shortcontent">Shop the lastest products right from your home with UrbanOutfit. We have beard supplies & accessories from top brands.</div>
+			{{block class="Magento\Cms\Block\Block" block_id="social-link"}}
+		</div>
+		<div class="col-lg-3 col-md-6 item">
+			<h3 class="footer-title">Last News</h3>
+			<div class="footer-content">
+				<span class="toggle-tab"><span class="hidden">hidden</span></span>
+				<div class="toggle-content">
+					{{widget type="Magiccart\Alothemes\Block\Widget\Blog" title="# Our Latest News" limit="12" slide="1" vertical="false" infinite="true" autoplay="false" arrows="false" dots="false" speed="300" autoplay-Speed="3000" padding="0" template="blog.phtml" rows="3" mobile="1" portrait="1" landscape="1" tablet="1" notebook="1" laptop="1" desktop="1" widescreen="1" visible="1"}}	
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-6 item item-links">
+			<h3 class="footer-title">Information</h3>
+			<div class="footer-content">
+				<span class="toggle-tab"><span class="hidden">hidden</span></span>
+				<div class="toggle-content">
+					<ul class="footer-links">
+						{{widget type="Magepow\Categories\Block\Widget\Categories" title="Magepow Categories Widget" template="categories_widget.phtml" sort_attribute="name" description="1" categories="40,37,38,9,11,14" slide="0" padding="0" mobile="1" portrait="1" landscape="1" tablet="1" notebook="1" laptop="1" desktop="1" widescreen="1" visible="1"}}
+					</ul>
+					<ul class="footer-links">
+						<li><a href="{{store url='#'}}">FAQs</a></li>
+						<li><a href="{{store url='#'}}">Track Order</a></li>
+						<li><a href="{{store url='shipping-delivery'}}">Delivery</a></li>
+						<li><a href="{{store url='returns-exchanges'}}">Contact Us</a></li>
+						<li><a href="{{store url='contact'}}">Return</a></li>
+						<li><a href="{{store url='#'}}">Policies</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-6">
+			<h3 class="footer-title">Subscribe our Newsletter</h3>
+			<div class="subscribe-text">Sign up Newsletter to get more Deals, Events & Promotions</div>
+			{{block class="Magento\Newsletter\Block\Subscribe" template="subscribe.phtml"}}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,29 @@
+<div class="cms-static-block block1">
+	<span class="fa fa-flag"><span class="hidden">icon</span></span>
+	<span>#come checkout our <strong>honest</strong> products <strong>back in stock </strong>this week</span>
+</div>
+<div class="cms-static-product product1">
+	{{widget type="Magiccart\Magicproduct\Block\Widget\Product" identifier="cms-static-tab" template="product-list.phtml"}}
+</div>
+<div class="cms-static-block block2">
+	<div class="row">
+		<div class="col-xl-8 col-lg-8 col-md-6 col-12 item">
+			<a href="#"><img src="{{media url="wysiwyg/alothemes/static/demo1/cms-static-home-1.jpg"}}" alt="" width="770" height="300"></a>
+		</div>
+		<div class="col-xl-4 col-lg-4 col-md-6 col-12 item">
+			<div class="block-newsletter">
+				<div class="cms-title">
+					<div class="title">Subscribe now!</div>
+					<div class="text">Get more special Deals, Events & Promotions</div>
+				</div>
+				{{block class="Magento\Newsletter\Block\Subscribe" template="subscribe.phtml"}}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="cms-static-product product2">
+	<div class="cms-title">
+		<div class="title">May you like</div>
+	</div>
+	{{widget type="Magiccart\Magicproduct\Block\Widget\Product" identifier="cms-static-product-tab" template="product.phtml"}}
+</div>

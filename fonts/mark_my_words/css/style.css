@@ -1,0 +1,7 @@
+@font-face {
+	src: url('../fonts/mark_my_words.ttf') format(‘truetype’),
+	url('../fonts/Captureit.woff') format('woff');
+	font-weight:normal;
+	font-style:normal;
+	font-family: "MarkMyWords";
+}

@@ -1,0 +1,49 @@
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3 col-md-6 col-12 item">
+			<h3 class="footer-title">Need help?</h3>
+			<div class="footer-content">
+				<span class="toggle-tab"><span class="hidden">hidden</span></span>
+				<div class="toggle-content">
+					<ul class="footer-links">
+						<li><a href="{{store url='contact'}}">Contact</a></li>
+						<li><a href="{{store url='#'}}">(+800)123 456 7890</a></li>
+						<li><a href="{{store url='shipping-delivery'}}">Shipping & Return</a></li>
+						<li><a href="{{store url='returns-exchanges'}}">Policies</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-6 col-sm-6 item">
+			<h3 class="footer-title">Connect</h3>
+			<div class="footer-content">
+				<span class="toggle-tab"><span class="hidden">hidden</span></span>
+				<div class="toggle-content">
+					<ul class="footer-links">
+						<li><a href="#"><span class="fa fa-facebook-square"><span class="hidden">icon</span></span>Facebook</a></li>
+						<li><a href="#"><span class="fa fa-twitter-square"><span class="hidden">icon</span></span>twitter</a></li>
+						<li><a href="#"><span class="fa fa-instagram"><span class="hidden">icon</span></span>instagram</a></li>
+						<li><a href="#"><span class="fa fa-youtube-play"><span class="hidden">icon</span></span>You tube</a></li>
+						<li><a href="#"><span class="fa fa-pinterest"><span class="hidden">icon</span></span>Pinterest</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-6 item">
+			<h3 class="footer-title">Categories</h3>
+			<div class="footer-content">
+				<span class="toggle-tab"><span class="hidden">hidden</span></span>
+				<div class="toggle-content">
+					{{widget type="Magepow\Categories\Block\Widget\Categories" title="Magepow Categories Widget" template="categories_widget.phtml" sort_attribute="name" description="0" categories="3,4,36,40,43" slide="0" padding="0" mobile="1" portrait="1" landscape="1" tablet="1" notebook="1" laptop="1" desktop="1" widescreen="1" visible="1"}}
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-6 col-12">
+			<h3 class="footer-title">Subscribe our Newsletter</h3>
+			{{block class="Magento\Newsletter\Block\Subscribe" template="subscribe.phtml"}}
+			<div class="payment">
+				{{block class="Magento\Cms\Block\Block" block_id="payment"}}
+			</div>			
+		</div>
+	</div>
+</div>

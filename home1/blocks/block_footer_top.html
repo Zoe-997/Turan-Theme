@@ -1,0 +1,47 @@
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4 col-md-6 col-12 item">
+			<div class="footer-logo">
+				<a class="link-logo" href="#">
+					<img src="{{media url="wysiwyg/alothemes/demo2/logo-3.png"}}" alt="" width="140" height="31">
+				</a>
+			</div>
+			<div class="footer-shortcontent">Shop the lastest products right from your home with UrbanOutfit. We have beard supplies & accessories from top brands.</div>
+		</div>
+		<div class="col-lg-2 col-md-6 col-sm-6 item">
+			<h3 class="footer-title">Links</h3>
+			<div class="footer-content">
+				<span class="toggle-tab"><span class="hidden">hidden</span></span>
+				<div class="toggle-content">
+					<ul class="footer-links">
+						<li><a href="{{store url='women.html'}}">Beard Oil & Balm</a></li>
+						<li><a href="{{store url='men.html'}}">Beard Wash</a></li>
+						<li><a href="{{store url='accessories.html'}}">Goodmorning</a></li>
+						<li><a href="{{store url='new-arrivals'}}">Gift Vouchers</a></li>
+						<li><a href="{{store url='sale-products'}}">Accessories</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-6 item">
+			<h3 class="footer-title">Information</h3>
+			<div class="footer-content">
+				<span class="toggle-tab"><span class="hidden">hidden</span></span>
+				<div class="toggle-content">
+					<ul class="footer-links">
+						<li><a href="{{store url='#'}}">FAQs</a></li>
+						<li><a href="{{store url='#'}}">Track Order</a></li>
+						<li><a href="{{store url='shipping-delivery'}}">Delivery</a></li>
+						<li><a href="{{store url='returns-exchanges'}}">Contact Us</a></li>
+						<li><a href="{{store url='contact'}}">Return</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-6 col-12">
+			<h3 class="footer-title">Subscribe our Newsletter</h3>
+			{{block class="Magento\Newsletter\Block\Subscribe" template="subscribe.phtml"}}
+			{{block class="Magento\Cms\Block\Block" block_id="social-link"}}
+		</div>
+	</div>
+</div>
